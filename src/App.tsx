@@ -4,6 +4,7 @@ import DashboardPanel from "./components/DashboardPanel";
 import SatelliteCard from "./components/SatelliteCard";
 import { satellites } from "./data/satellites";
 import type { Satellite } from "./data/satellites";
+import OrbitalMap from "./components/OrbitalMap";
 
 function App() {
   const [selectedSatellite, setSelectedSatellite] =
@@ -28,7 +29,7 @@ function App() {
         </DashboardPanel>
 
         <DashboardPanel title="Orbital Map">
-          <p>Tracking visualization will appear here.</p>
+        <OrbitalMap />
         </DashboardPanel>
 
         <DashboardPanel title="Mission Status">
